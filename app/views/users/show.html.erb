@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Uid:</b>
+  <%= @user.uid %>
+</p>
+
+<p>
+  <b>Token:</b>
+  <%= @user.token %>
+</p>
+
+<p>
+  <b>Habits:</b>
+  <%= @user.habits %>
+</p>
+
+<p>
+  <b>Day:</b>
+  <%= @user.day %>
+</p>
+
+<p>
+  <b>Hour:</b>
+  <%= @user.hour %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
