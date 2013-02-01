@@ -14,3 +14,8 @@
 /log/*.log
 /tmp
 .DS_Store
+
+config/database.yml
+
+.* # Ignore all dotfiles...
+!.gitignore # except for .gitignore
