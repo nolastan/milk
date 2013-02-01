@@ -13,6 +13,8 @@ group :development, :test do
   gem 'mysql2'
 end
 
+gem 'delayed_job_active_record'
+
 gem 'json'
 
 # Gems used only for assets and not required
