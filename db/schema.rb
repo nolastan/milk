@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130201221834) do
+ActiveRecord::Schema.define(:version => 20130201224246) do
 
   create_table "delayed_jobs", :force => true do |t|
     t.integer  "priority",   :default => 0
@@ -46,10 +46,11 @@ ActiveRecord::Schema.define(:version => 20130201221834) do
     t.integer  "uid"
     t.string   "token"
     t.text     "habits"
-    t.integer  "day",        :default => 1
+    t.integer  "day",            :default => 1
     t.integer  "hour"
-    t.datetime "created_at",                :null => false
-    t.datetime "updated_at",                :null => false
+    t.datetime "created_at",                    :null => false
+    t.datetime "updated_at",                    :null => false
+    t.integer  "delayed_job_id"
   end
 
 end
