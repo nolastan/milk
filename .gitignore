@@ -16,6 +16,7 @@
 .DS_Store
 
 config/database.yml
+config/taskrabbit.yml
 
 .* # Ignore all dotfiles...
 !.gitignore # except for .gitignore
