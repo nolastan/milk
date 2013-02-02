@@ -3,7 +3,7 @@ if ENV['TR_SECRET']
   TASKRABBIT[:key] = ENV['TR_key']
   TASKRABBIT[:url] = ENV['TR_url']
 else
-  TASKRABBIT = HashWithIndifferentAccess.new(YAML.load(File.read(File.expand_path('taskrabbit.yml', __FILE__))))
+  TASKRABBIT = HashWithIndifferentAccess.new(YAML.load_file("#{Rails.root}/config/taskrabbit.yml"))
 end
 
 Taskrabbit.configure do |config|
