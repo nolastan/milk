@@ -11,6 +11,7 @@ end
 
 group :development, :test do
   gem 'mysql2'
+  gem 'debugger'
 end
 
 gem 'delayed_job_active_record'
@@ -47,4 +48,3 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 # To use debugger
-# gem 'ruby-debug'
